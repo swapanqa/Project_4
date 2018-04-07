@@ -68,6 +68,7 @@ public class AddOrRemoveItemSteps extends StepBase {
 
     @Then("^Cart should have one item in it$")
     public void cart_should_have_one_item_in_it() throws Throwable {
+        delayFor(2000);
         WebElement shoppingCart = driver.findElement(By.xpath("//li[8]/a/span"));
         String text = shoppingCart.getText();
         Assert.assertEquals("1", text);

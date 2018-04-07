@@ -105,12 +105,11 @@
                 <configuration>
                     <!-- JUnit Cucumber Runner -->
                     <includes>
-                        <!--
-                        <include>**/BDDRunnerJUnit.java</include>
-                        -->
-                        <include>**/SpreeLoginFunctionalityJUnit.java</include>
-                        <include>**/SpreeLoginJUnit.java</include>
-                    </includes>
+
+                        <include>**/BDDRunner.java</include>
+                        <!--<include>**/SpreeLoginFunctionalityJUnit.java</include>-->
+                        <!--<include>**/SpreeLoginJUnit.java</include>-->
+                    <!--</includes>-->
 
                     <!-- TestNG Functional Test Runner -->
                     <!--
@@ -125,7 +124,7 @@
                         <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     -->
-
+                    </includes>
                 </configuration>
             </plugin>
             <plugin>
@@ -140,7 +139,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>PrettyGreenFramework</projectName>  <!-- Replace with project name -->
+                            <projectName>PrettyGreenFramework_2</projectName>  <!-- Replace with project name -->
                             <outputDirectory>target/cucumber-test-report/advanced-reports</outputDirectory>
                             <cucumberOutput>target/cucumber-test-report/cucumber-report.json</cucumberOutput>
                             <buildNumber>1</buildNumber>

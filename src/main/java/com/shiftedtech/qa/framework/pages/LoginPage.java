@@ -42,14 +42,7 @@ public class LoginPage extends PageBase {
 
     public void verifyLoginNotSuccess(){
         Boolean isPresent = driver.findElements(By.xpath("//*[@class='fi-alert']")).size()>0;
-        //String successText = alertMsg.getText();
-        //String successText = getAlertMsg().getText();
-        // Assert.assertEquals("Invalid email or password.",successText);
-        //assertThat(successText, startsWith("Invalid"));
-        //assertThat(successText, endsWith("password."));
-        //assertThat(successText,containsString("correct email"));
-        //assertThat(successText,equalTo("Invalid email or password."));
-        //assertThat(successText, CoreMatchers.containsString("correct email"));
+
         System.out.println("Unsuccessful login attempt");
     }
 }

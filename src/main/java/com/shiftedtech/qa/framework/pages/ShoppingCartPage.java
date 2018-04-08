@@ -43,9 +43,11 @@ public void addAdditionalItemToCart(){
 
          System.out.println("This shipment qualifies for free shipping.");
      }
+     else {
+         System.out.println("This shipment does not qualify for free shipping.");
 
 
-
+     }
 
  }
 

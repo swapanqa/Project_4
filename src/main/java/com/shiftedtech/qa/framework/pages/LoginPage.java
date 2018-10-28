@@ -43,7 +43,7 @@ public class LoginPage extends PageBase {
     public void verifyLoginNotSuccess(){
         Boolean isPresent = driver.findElements(By.xpath("//*[@class='fi-alert']")).size()>0;
 
-        System.out.println("Unsuccessful login attempt");
+        System.out.println("Unsuccessful login attempt" + isPresent);
     }
 }
 

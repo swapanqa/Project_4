@@ -5,8 +5,7 @@ import com.shiftedtech.qa.framework.pages.LoginPage;
 import com.shiftedtech.qa.framework.pages.SearchFunctionPage;
 import com.shiftedtech.qa.framework.pages.ShoppingCartPage;
 import com.shiftedtech.qa.framework.utils.WebElementUtils;
-import com.shiftedtech.qa.framework.utils.DriverFactory;
-import org.openqa.selenium.WebDriver;
+
 
 public class StepBase extends WebElementUtils {
 
